@@ -29,6 +29,10 @@ FROM henryse/rpi-ruby:2.4
 ARG PROJECT_VERSION=latest
 ARG PROJECT_NAME=not_defined
 
+RUN apt-get -y update && apt-get -y upgrade
+RUN apt-get install -y \
+	build-essential
+
 ADD app /usr/src/app
 WORKDIR /usr/src/app
 
