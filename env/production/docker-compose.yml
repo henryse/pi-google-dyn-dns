@@ -1,7 +1,7 @@
 version: "2"
 services:
   pi_google_dyn_dns:
-    image: henryse/pi_google_dyn_dns:latest
+    image: henryse/pi-google-dyn-dns:latest
     restart: always
     ports:
       - 8443
