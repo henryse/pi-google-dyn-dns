@@ -1,13 +1,13 @@
 version: "2"
 services:
-  pi_google_dyn_dns:
+  pi-google-dyn-dns:
     image: henryse/pi-google-dyn-dns:latest
     restart: always
     ports:
       - 8443
     volumes:
       - /var/lib/sslcerts:/usr/src/app/cert
-      - /var/local/config/GoogleDynDNS:/usr/src/app/config
+      - /var/local/config/pi-google-dyn-dns:/usr/src/app/config
     environment:
       - "HOST=$DOCKER_IP"
       - "LOGSTASH_ENABLED=false"

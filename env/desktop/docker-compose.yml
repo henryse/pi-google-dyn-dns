@@ -1,6 +1,6 @@
 version: "2"
 services:
-  pi_google_dyn_dns:
+  pi-google-dyn-dns:
     image: henryse/pi-google-dyn-dns:latest
     ports:
       - 8443:9443
